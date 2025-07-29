@@ -1,0 +1,49 @@
+.player {
+    height : 100%;
+    display : flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.player img {
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.player-info {
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+    justify-content: space-between;
+
+}
+
+
+.player-video-wrapper {
+    position: relative;
+    width: 90vw;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    margin-top: 40px;
+}
+
+.player iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    display: block;
+}
+.player-info p {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+    align-self: flex-start;
+}
