@@ -3,6 +3,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Login from './pages/Home/Login/Login'
 import Player from './Pages/Player/Player' // Ensure this import is correct and the component is capitalized
+import NotFound from './Pages/NotFound/NotFound'
 import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from './firebase' // Ensure this import is correct
  import { ToastContainer, toast } from 'react-toastify';
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         {/* Add the player route below, ensure the component is capitalized */}
         <Route path='/player/:id' element={<Player/>} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   )
